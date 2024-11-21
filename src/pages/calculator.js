@@ -3,6 +3,7 @@ import SiteHero from "@site/src/components/Layout/SiteHero";
 import BoundaryBox from "@site/src/components/Layout/BoundaryBox";
 import TitleWithText from "@site/src/components/Layout/TitleWithText";
 import OpenGraphImage from "@site/src/components/Layout/OpenGraphImage";
+import SpacerBox from "@site/src/components/Layout/SpacerBox";
 
 function HomepageHeader() {
   const { siteTitle } = "useDocusaurusContext()";
@@ -25,8 +26,25 @@ export default function Home() {
       <OpenGraphImage pageName="calculator" />
       <HomepageHeader />
       <main>
+      <BoundaryBox>
+        <TitleWithText
+              title="Reward Calculator"
+              titleType="black"
+              headingDot={true}
+            />
+      </BoundaryBox>
+      <iframe
+          src="/reward-calculator/index.html"
+          sandbox="allow-scripts allow-same-origin"
+          style={{
+            width: "100%",
+            height: "100vh",
+            border: "none"
+          }}
+          title="Cardano Reward Calculator"
+        ></iframe>
+
         <BoundaryBox>
-        {/* FIXME: Reward Calculator */}  
         <TitleWithText
               title="The Reward Calculator is being revised"
               description={[
@@ -38,6 +56,7 @@ export default function Home() {
               titleType="black"
               headingDot={true}
             />
+            <SpacerBox size="medium"/>
         </BoundaryBox>
       </main>
     </Layout>
