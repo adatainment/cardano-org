@@ -374,12 +374,6 @@ const config = {
           */
           },
           {
-            to: "/docs/communities/#cardano-on-discord",
-            position: "right",
-            className: "header-discord-link",
-            "aria-label": "Discord",
-          },
-          {
             href: `${vars.repository}`,
             position: "right",
             className: "header-github-link",
