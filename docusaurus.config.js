@@ -384,9 +384,6 @@ const config = {
           },
           */
           {
-            to: '/news', label: 'News', position: 'left',
-          },
-          {
             href: `${vars.repository}`,
             position: "right",
             className: "header-github-link",
