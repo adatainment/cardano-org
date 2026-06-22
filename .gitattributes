@@ -1,0 +1,3 @@
+# Normalize line endings to LF on checkout for all text files so the build
+# (markdown frontmatter parsing, yaml, etc.) works identically on Windows.
+* text=auto eol=lf

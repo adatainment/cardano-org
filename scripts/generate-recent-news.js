@@ -76,7 +76,7 @@ for (const dir of dirs) {
   const content = fs.readFileSync(indexPath, 'utf8');
 
   // Parse frontmatter
-  const fmMatch = content.match(/^---\n([\s\S]*?)\n---/);
+  const fmMatch = content.match(/^---\r?\n([\s\S]*?)\r?\n---/);
   if (!fmMatch) continue;
 
   const frontmatter = yaml.load(fmMatch[1]);

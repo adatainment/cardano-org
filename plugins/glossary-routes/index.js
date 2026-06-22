@@ -20,7 +20,7 @@ const VALID_LEVELS = new Set(['beginner', 'intermediate', 'advanced']);
 // from "translator wrote an explicit empty value".
 function parseTermFile(filepath, slug) {
   const raw = fs.readFileSync(filepath, 'utf8');
-  const match = raw.match(/^---\n([\s\S]*?)\n---\n?([\s\S]*)$/);
+  const match = raw.match(/^---\r?\n([\s\S]*?)\r?\n---\r?\n?([\s\S]*)$/);
   if (!match) throw new Error(`Glossary file ${filepath} has no frontmatter block`);
   const fm = yaml.load(match[1]) || {};
   const body = match[2].trim();
