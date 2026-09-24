@@ -5,7 +5,7 @@ short: The protocol parameter that prices each byte of on-chain storage a UTxO o
 category: general
 level: intermediate
 aliases: ["utxoCostPerByte", "Min UTxO", "Min-Ada"]
-mentalModel: "Storage rent paid up front. Sending an output to the chain locks a small amount of ada proportional to its serialized size; that ada is fully returned the moment the output is later spent."
+mentalModel: "A refundable deposit for the space an output takes up on every node. Sending an output to the chain locks a small amount of ada proportional to its serialized size, and that ada is fully returned the moment the output is later spent."
 related: [utxo, eutxo, native-token, ada]
 ---
 
